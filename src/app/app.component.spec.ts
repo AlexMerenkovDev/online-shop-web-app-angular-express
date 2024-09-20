@@ -14,16 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'angular-tutorial-2024' title`, () => {
+  it(`should have the 'angular-online-clothes-shop' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-tutorial-2024');
+    expect(app.title).toEqual('angular-online-clothes-shop');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-tutorial-2024');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, angular-online-clothes-shop'
+    );
   });
 });
